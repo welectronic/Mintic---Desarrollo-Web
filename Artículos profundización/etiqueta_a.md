@@ -186,10 +186,6 @@ a:focus {
 
 Esta transición asegura que el cambio de color no sea abrupto, sino que ocurra de manera suave, lo que crea una experiencia de usuario más agradable.
 
-**Colecciones de animaciones de enlaces**:
-
-En plataformas como CodePen, es posible encontrar colecciones completas de animaciones de enlaces que pueden ser incorporadas y personalizadas en proyectos web. Estas animaciones van desde simples efectos de hover hasta transformaciones y efectos más elaborados.
-
 ```html
 <div>
   Este es un <a href="#" target="_blank">enlace animado</a>.
