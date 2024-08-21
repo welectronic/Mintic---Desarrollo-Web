@@ -220,14 +220,5 @@ Este código CSS añade no solo un cambio de color y subrayado, sino también un
 3. **Prácticas recomendadas para enlaces internos y SEO**  
    Moz. [Internal Links: What They Are and How to Use Them](https://moz.com/learn/seo/internal-link).
 
-4. **Guía sobre la etiqueta `<a>` en HTML**  
-   Semrush. [HTML Anchor Element: A Simple Guide for Beginners](https://www.semrush.com/blog/html-a-tag/).
-
-5. **Documentación sobre la etiqueta `<a>`**  
-   MDN Web Docs. [HTML `<a>` Element](https://developer.mozilla.org/es/docs/Web/HTML/Element/a).
-
-6. **Prácticas recomendadas para enlaces internos y SEO**  
-   Moz. [Internal Links: What They Are and How to Use Them](https://moz.com/learn/seo/internal-link).
-
-7. **Cutup #3: Link `<a>`**  
+4. **Cutup #3: Link `<a>`**  
    Medium. [Cutup #3: Link `<a>`](https://medium.com/design-code-repository/cutup-3-link-a-45b7743fd225).
