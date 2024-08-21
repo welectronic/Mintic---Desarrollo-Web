@@ -94,7 +94,126 @@ Mantener enlaces saludables en un sitio web es crucial para la experiencia del u
 
 Mantener los enlaces en buen estado es fundamental para evitar errores 404, mejorar el ranking en los motores de búsqueda y asegurar que los usuarios tengan una navegación fluida en tu sitio web.
 
-### Referencias
+## 7. Atributos adicionales y su uso en la etiqueta `<a>`
+
+La etiqueta `<a>` en HTML es sumamente versátil y admite varios atributos adicionales que pueden influir en su comportamiento y presentación. Aquí exploramos algunos de estos atributos:
+
+**download**: Este atributo permite a los navegadores descargar archivos, como imágenes o documentos PDF, en lugar de simplemente navegar a ellos. Cuando un usuario hace clic en el enlace, se le pedirá que guarde el archivo localmente en su dispositivo.
+
+```html
+<a href="/images/nana.jpg" download="midnightblue.jpg">Descargar imagen</a>
+```
+
+En el ejemplo anterior, el archivo se descargará con el nombre `midnightblue.jpg` en lugar de su nombre original `nana.jpg`. Es importante tener en cuenta que el enlace de descarga debe estar bajo el mismo dominio.
+
+**title**: El atributo `title` proporciona información adicional sobre el enlace. Esta información aparece como un texto emergente cuando un usuario pasa el cursor sobre el enlace. Es útil para ofrecer más contexto sobre el destino del enlace.
+
+```html
+<a href="https://www.ejemplo.com" title="Visita nuestro sitio web para más información">Nuestro sitio web</a>
+```
+
+**name**: Este atributo, aunque en desuso, se utilizaba para definir una ubicación objetivo dentro de la página. Es equivalente al atributo `id`, y aún se puede encontrar en proyectos más antiguos.
+
+```html
+<a name="seccion1"></a>
+```
+
+## 8. Estilos y estados de los enlaces
+
+La apariencia de los enlaces y cómo se comportan en diferentes estados (por ejemplo, cuando un usuario pasa el cursor sobre ellos o después de que han sido visitados) es crucial para la experiencia de usuario.
+
+**Estados del enlace**:
+
+- **Unvisited Link**: El estado por defecto de un enlace cuando no se ha visitado.
+- **Visited**: Estado de un enlace después de haber sido visitado.
+- **Hover**: Estado cuando el enlace está siendo pasado por encima por el cursor del ratón. Se puede estilizar utilizando la pseudo clase `:hover`.
+- **Focus**: Estado cuando el enlace ha sido enfocado (por ejemplo, cuando un usuario navega con el teclado utilizando la tecla Tab o cuando se enfoca programáticamente usando `HTMLElement.focus()`). Se estiliza usando la pseudo clase `:focus`.
+- **Active**: Estado cuando el enlace está siendo activado (por ejemplo, al hacer clic en él). Se puede estilizar usando la pseudo clase `:active`.
+
+Estos estados permiten que los diseñadores web proporcionen una experiencia de usuario más rica y reactiva, asegurando que los enlaces sean claramente distinguibles en diferentes situaciones. Además, aplicar estilos personalizados a estos estados es esencial para la accesibilidad y usabilidad del sitio web.
+
+**Ejemplo de estilos aplicados a un enlace básico**:
+
+```html
+<a href="#" target="_blank">Este es un enlace</a>
+```
+
+```css
+a {
+  color: salmon;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+a:hover {
+  color: midnightblue;
+  text-decoration: underline;
+}
+
+a:focus {
+  outline: 2px solid orange;
+}
+
+a:active {
+  color: red;
+}
+```
+
+En este ejemplo, se puede observar cómo un enlace cambia de color cuando se pasa el cursor sobre él, cuando se enfoca y cuando se hace clic en él, mejorando así la interactividad y accesibilidad.
+
+## 9. Cómo animar enlaces
+
+La animación de enlaces puede aportar una dimensión adicional de interactividad a un sitio web. Existen varias técnicas para animar enlaces, desde cambios sutiles en el color hasta transiciones más complejas.
+
+**Animaciones básicas con CSS**:
+
+Utilizando solo CSS, puedes crear transiciones suaves cuando un usuario interactúa con un enlace.
+
+```css
+a {
+  color: salmon;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: midnightblue;
+}
+
+a:focus {
+  color: orange;
+}
+```
+
+Esta transición asegura que el cambio de color no sea abrupto, sino que ocurra de manera suave, lo que crea una experiencia de usuario más agradable.
+
+**Colecciones de animaciones de enlaces**:
+
+En plataformas como CodePen, es posible encontrar colecciones completas de animaciones de enlaces que pueden ser incorporadas y personalizadas en proyectos web. Estas animaciones van desde simples efectos de hover hasta transformaciones y efectos más elaborados.
+
+```html
+<div>
+  Este es un <a href="#" target="_blank">enlace animado</a>.
+</div>
+```
+
+```css
+a {
+  color: salmon;
+  font-weight: 400;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: midnightblue;
+  text-decoration: underline;
+  transform: scale(1.1);
+}
+```
+
+Este código CSS añade no solo un cambio de color y subrayado, sino también un ligero escalado cuando el usuario pasa el cursor sobre el enlace, proporcionando una sensación de dinamismo y modernidad al sitio web.
+
+## Referencias
 
 1. **Guía sobre la etiqueta `<a>` en HTML**  
    Semrush. [HTML Anchor Element: A Simple Guide for Beginners](https://www.semrush.com/blog/html-a-tag/).
@@ -104,3 +223,15 @@ Mantener los enlaces en buen estado es fundamental para evitar errores 404, mejo
 
 3. **Prácticas recomendadas para enlaces internos y SEO**  
    Moz. [Internal Links: What They Are and How to Use Them](https://moz.com/learn/seo/internal-link).
+
+4. **Guía sobre la etiqueta `<a>` en HTML**  
+   Semrush. [HTML Anchor Element: A Simple Guide for Beginners](https://www.semrush.com/blog/html-a-tag/).
+
+5. **Documentación sobre la etiqueta `<a>`**  
+   MDN Web Docs. [HTML `<a>` Element](https://developer.mozilla.org/es/docs/Web/HTML/Element/a).
+
+6. **Prácticas recomendadas para enlaces internos y SEO**  
+   Moz. [Internal Links: What They Are and How to Use Them](https://moz.com/learn/seo/internal-link).
+
+7. **Cutup #3: Link `<a>`**  
+   Medium. [Cutup #3: Link `<a>`](https://medium.com/design-code-repository/cutup-3-link-a-45b7743fd225).
